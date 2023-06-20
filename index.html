@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>bilet_28</title>
+
+</head>
+<body>
+   <section class="section">
+    <button class="back"><</button>
+    <div class="title">Fill in your bio to get started</div>
+    <div class="subtitle">This data will be displayed in your account profile for security</div>
+
+    <form class="form">
+        <label for="name"></label>
+        <input placeholder="First Name" type="text" id="name" name="name" required>
+        
+        <label for="surname"></label>
+        <input placeholder="Last Name" type="text" id="surname" name="surname" required>
+        
+        <label for="phone"></label>
+        <input placeholder="Mobile Number" type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        
+      </form>
+      
+      <button class="next">Next</button>
+   </section>
+</body>
+</html>
