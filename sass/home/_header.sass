@@ -1,0 +1,54 @@
+.header
+    width: auto
+    height: auto
+    padding: 28px 0 28px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        width: 225px
+        img
+            width: 100%
+    &__contact
+        display: flex
+        align-items: center
+        &-time
+            margin-top: 2px
+            font-size: 14px
+            line-height: 1
+            font-weight: 500
+            color: #151515
+            border-right: 1px solid #e1e1e1
+            padding-right: 25px
+        &-tel
+            a
+                text-decoration: none
+                font-size: 14px
+                line-height: 1
+                font-weight: 500
+                color: #151515
+                padding-left: 25px
+                transition: 0.5s all
+                &:hover
+                    color: #01b3a7
+        &-btn
+            a
+                color: #01b3a7
+                padding: 15px 30px
+                text-decoration: none
+                font-size: 16px
+                line-height: 1.5
+                border: solid 2px
+                border-color: #01b3a7
+                margin-left: 65px
+                transition: 0.5s all
+                &:hover
+                    background-color: #01b3a7
+                    color: #fff
+                
+.hamburger
+    display: none
+.menu
+    &_item
+        display: none

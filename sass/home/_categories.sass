@@ -1,0 +1,42 @@
+.categories
+    width: auto
+    height: auto
+    background: #f7f7f7
+    padding: 50px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__btn
+        text-decoration: none
+        font-weight: 500
+        font-size: 16px
+        text-transform: none
+        color: #151515
+        text-align: center
+        display: block
+        margin-top: 40px
+        transition: 0.5s all
+        &:hover
+            color: #01b3a7
+           
+.hover-image-scale 
+    position: relative
+    display: inline-block
+    overflow: hidden // Скрываем всё за контуром */
+p
+    margin: 0
+    position: absolute
+    bottom: 25px
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 18px
+    font-weight: 700
+    color: #ffffff
+      
+.hover-image-scale img 
+    transition: 1s // Время эффекта */
+    display: block
+      
+.hover-image-scale img:hover 
+    transform: scale(1.2) // Увеличиваем масштаб */
+      

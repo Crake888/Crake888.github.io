@@ -1,0 +1,56 @@
+.people
+    width: auto
+    height: auto
+    padding: 50px 0 100px 0
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-item
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                transition: transform 0.3s ease-in-out
+                display: block
+                border-radius: 100%
+                margin-bottom: 30px
+                &:hover
+                    transform: translateY(-0.1cm)
+                    border: 4px solid
+                    border-radius: 100%
+                    border-color: #01b3a7
+        &-header
+            display: block
+            text-align: center
+            margin-bottom: 50px
+        &-subheader
+            margin-bottom: 5px
+            font-size: 18px
+            line-height: 1.2
+            font-weight: 600
+            a
+                text-decoration: none
+                font-weight: 500
+                letter-spacing: normal
+                font-size: 21px
+                color: #000
+                transition: 0.5s all
+                &:hover
+                    color: #01b3a7
+        &-descr
+            color: #01b3a7
+            letter-spacing: .025em
+            line-height: 1.71429
+            font-weight: 500
+            font-size: 14px
+        &-tel
+            a
+                text-decoration: none
+                font-weight: 500
+                letter-spacing: normal
+                font-size: 18px
+                color: #000
+                transition: 0.5s all
+                &:hover
+                    color: #01b3a7

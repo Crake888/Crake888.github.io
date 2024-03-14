@@ -1,0 +1,88 @@
+
+.tab
+  display: flex
+  flex-wrap: wrap
+
+  > input[type=radio]
+    display: none
+
+.tab-content
+  display: none
+  width: 100%
+  margin-top: 1rem
+
+.tab-content-btn
+  display: flex
+  margin-top: 40px
+
+  div
+    margin-right: 20px
+
+  a
+    padding: 15px 30px
+    text-decoration: none
+    font-size: 16px
+    line-height: 1.5
+    border: solid 2px
+    border-color: #01b3a7
+    transition: 0.5s all
+    color: #000
+
+    &:hover
+      background-color: #01b3a7
+      color: #fff
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3 
+  display: block
+
+#tab-btn-1:checked ~ .tab > label[for="tab-btn-1"],
+#tab-btn-2:checked ~ .tab > label[for="tab-btn-2"],
+#tab-btn-3:checked ~ .tab > label[for="tab-btn-3"] 
+  text-decoration: underline
+
+.tab > label
+  padding-top: 20px
+  padding-bottom: 10px
+  cursor: pointer
+  transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out
+  color: #01b3a7
+  background: 0 0
+  border-bottom: 0.125rem solid transparent
+  margin-right: 20px
+  font-size: 20px
+  font-weight: 400
+
+  &:hover 
+    border-bottom-color: #01b3a7
+
+#tab-btn-1:checked ~ .tab > label[for="tab-btn-1"],
+#tab-btn-2:checked ~ .tab > label[for="tab-btn-2"],
+#tab-btn-3:checked ~ .tab > label[for="tab-btn-3"]
+  color: #212529
+  border-bottom-color: #212529
+  cursor: default
+  font-weight: bold
+
+h3
+  margin-top: 0
+  margin-bottom: 0
+  font-weight: 600
+  letter-spacing: normal
+  color: #151515
+  font-size: 36px
+  line-height: 1.2
+
+.horizons
+  width: auto
+  height: auto
+  padding: 80px 0
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &-img
+      padding-right: 100px

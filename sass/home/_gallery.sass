@@ -1,0 +1,34 @@
+.gallery
+    &__slider-container 
+        position: relative
+        width: 100%
+        overflow: hidden
+        padding: 70px 0
+
+
+.gallery
+    &__slider 
+        display: flex
+        transition: transform 0.5s ease
+        img 
+            width: 100%
+            height: auto
+
+    
+.gallery_prev, .gallery_next 
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    padding: 10px 20px
+    background-color: #333
+    color: #fff
+    border: none
+    cursor: pointer
+
+
+.gallery_prev 
+    left: 10px
+
+
+.gallery_next 
+    right: 10px
