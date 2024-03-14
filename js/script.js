@@ -9,12 +9,10 @@ window.addEventListener('scroll', function() {
       navbar.style.position = 'fixed';
       navbar.style.top = '0';
       navbar.style.width = '100%';
-      navbar.style.backgroundColor = '#162e44'; /* Налаштуйте колір фону, якщо потрібно */
-      /* Додайте інші необхідні стилі */
+      navbar.style.backgroundColor = '#162e44'; 
   } else {
       navbar.style.position = 'static';
-      navbar.style.backgroundColor = '#162e44'; /* Поверніть фон в прозорий, якщо потрібно */
-      /* Поверніть інші стилі до значень за замовчуванням */
+      navbar.style.backgroundColor = '#162e44'; 
   }
 });
 
