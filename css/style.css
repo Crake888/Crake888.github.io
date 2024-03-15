@@ -605,41 +605,71 @@ h3 {
   z-index: 2;
 }
 
-.gallery__slider-container {
+.gallery {
   position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding: 70px 0;
+  margin: 20px 10px;
 }
-
-.gallery__slider {
+.gallery .slider {
   display: flex;
+  justify-content: center;
+  overflow: hidden;
   transition: transform 0.5s ease;
 }
-.gallery__slider img {
-  width: 100%;
-  height: auto;
+.gallery .slide {
+  flex: 0 0 auto;
+  width: 270px;
+  margin: 0 10px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
 }
-
-.gallery_prev, .gallery_next {
+.gallery .slide img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+.gallery .slide img:hover {
+  transform: scale(1.1);
+}
+.gallery .prev-btn,
+.gallery .next-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  border-radius: 3px 0 0 3px;
   border: none;
+  padding: 16px;
+  transition: 0.6s ease;
   cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  padding: 10px;
+  transition: 0.6s ease;
+  background-color: transparent;
+}
+.gallery .prev-btn:hover,
+.gallery .next-btn:hover {
+  background-color: #01b3a7;
+  color: #000;
+}
+.gallery .prev-btn {
+  left: 0;
+}
+.gallery .next-btn {
+  right: 0;
 }
 
-.gallery_prev {
-  left: 10px;
+@media only screen and (max-width: 767px) {
+  .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
-
-.gallery_next {
-  right: 10px;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .slide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
-
 .footer {
   background: #162e44;
   width: auto;
@@ -992,14 +1022,30 @@ h3 {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .header__contact-btn a {
+    font-size: 14px;
+    display: block;
+  }
   .slideshow-container h1 {
     font-size: 12px;
   }
   .slideshow-container h2 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  .text__btn a {
+    font-size: 12px;
   }
   .hover-image-scale {
     padding: 0;
+  }
+  .hover-image-scale p {
+    font-size: 14px;
+  }
+  .categories {
+    padding-bottom: 35px;
+  }
+  .categories__btn {
+    font-size: 14px;
   }
   .horizons__wrapper-img img {
     width: 100%;
@@ -1028,6 +1074,37 @@ h3 {
   }
   .tours__wrapper-item {
     padding-right: 0;
+  }
+  .tours__wrapper-btn a {
+    font-size: 14px;
+  }
+  .people__wrapper-item {
+    margin-bottom: 20px;
+  }
+  .people__wrapper-subheader a {
+    font-size: 18px;
+  }
+  .people__wrapper-tel a {
+    font-size: 16px;
+  }
+  .subscribe-header {
+    padding-top: 90px;
+    font-size: 30px;
+  }
+  .subscribe-descr {
+    font-size: 14px;
+  }
+  .subscribe-btn {
+    padding-bottom: 100px;
+  }
+  .subscribe-btn a {
+    font-size: 14px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .policy {
+    padding: 25px 0;
   }
   .policy__wrapper {
     flex-direction: column;

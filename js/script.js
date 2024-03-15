@@ -1,3 +1,42 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const slidesToShow = 3; // Кількість слайдів для відображення
+  let currentIndex = 0;
+  
+  // Функція для перемикання до попередньої групи слайдів
+  function showPrevGroup() {
+    currentIndex = (currentIndex - slidesToShow >= 0) ? currentIndex - slidesToShow : slides.length - slidesToShow;
+    updateSlider();
+  }
+  
+  // Функція для перемикання до наступної групи слайдів
+  function showNextGroup() {
+    currentIndex = (currentIndex + slidesToShow < slides.length) ? currentIndex + slidesToShow : 0;
+    updateSlider();
+  }
+  
+  // Функція для оновлення відображення слайдера
+  function updateSlider() {
+    for (let i = 0; i < slides.length; i++) {
+      if (i >= currentIndex && i < currentIndex + slidesToShow) {
+        slides[i].style.display = 'block';
+      } else {
+        slides[i].style.display = 'none';
+      }
+    }
+  }
+  
+  // Обробники подій для кнопок "prev" та "next"
+  prevBtn.addEventListener('click', showPrevGroup);
+  nextBtn.addEventListener('click', showNextGroup);
+  
+  // Виклик функції оновлення слайдера після завантаження сторінки
+  updateSlider();
+});
+
 
 //---Navbar----------------------------------------------------------------------------------------
 
