@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
 <!--Loading...------------------------------------------------------------------------------->
-<!-- 
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+ <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing      experience,  upgrade for free today."></a>
     </div>
     <div class="preloader">
       <div class="preloader-body">
@@ -26,8 +26,7 @@
         </div>
         <p>Loading...</p>
       </div>
-    </div>
--->
+ </div>
 <!--Header----------------------------------------------------------------------------------->
 <section class="header">
   <div class="container">
@@ -37,8 +36,8 @@
       </div>
       <ul class="menu">
         <div class="header__contact">
-          <div class="header__contact-time">09:00AM — 05:00PM</div>
-          <div class="header__contact-tel"><a href="#">+1 323-913-4688</a></div>
+          <div class="header__contact-time"><div class="header__contact-img"><img src="icons/page_icons/free-icon-time-3239945.png" alt="iii"></div> 09:00AM — 05:00PM</div>
+          <div class="header__contact-tel"><div class="header__contact-img"><img src="icons/page_icons/free-icon-telephone-call-251354.png" alt="xxx"></div><a href="#">+1 323-913-4688</a></div>
           <div class="header__contact-btn"><a href="#">Get a Free Quote</a></div>
         </div>
         <ul class="header__navbar__nav">
@@ -63,15 +62,15 @@
         <ul class="navbar__nav">
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="typography.html">Typography</a></li>
+          <li><a href="404.html">Typography</a></li>
           <li><a href="contact-us.html">Contact US</a></li>
         </ul>
       </div>
       <div>
         <ul class="navbar__social">
-          <li><a href="#"><img src="icons/facebook.svg" alt="facebook"></a></li>
-          <li><a href="#"><img src="icons/X.svg" alt="X"></a></li>
-          <li><a href="#"><img src="icons/instagram.svg" alt="instagram"></a></li>
+          <li><a href="#"><img src="icons/facebook.png" alt="facebook"></a></li>
+          <li><a href="#"><img src="icons/twitter.png" alt="X"></a></li>
+          <li><a href="#"><img src="icons/video.png" alt="instagram"></a></li>
         </ul>
       </div>
     </div>
@@ -81,38 +80,38 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <img src="img/home/slider/slider-4-slide-1-1920x678.jpg" style="width:100%">
-    <div class="text">
-      <h1>Enjoy the Best Destinations with Our Travel Agency</h1>
-      <h2>Explore The World</h2>
-      <div class="text__btn"><a href="#">Get in touch</a></div>
+    <div class="container">
+      <div class="text">
+        <h1>Enjoy the Best Destinations with Our Travel Agency</h1>
+        <h2>Explore The World</h2>
+        <div class="text__btn"><a href="#">Get in touch</a></div>
+      </div>
     </div>
   </div>
   <div class="mySlides fade">
     <img src="img/home/slider/slider-4-slide-2-1920x678.jpg" style="width:100%">
-    <div class="text">
-      <h1>A team of professional Travel Experts</h1>
-      <h2>Trust Our Experience</h2>
-      <div class="text__btn"><a href="#">Get in touch</a></div>
+    <div class="container">
+      <div class="text">
+        <h1>A team of professional Travel Experts</h1>
+        <h2>Trust Our Experience</h2>
+        <div class="text__btn"><a href="#">Get in touch</a></div>
+      </div>
     </div>
   </div>
   <div class="mySlides fade">
     <img src="img/home/slider/slider-4-slide-3-1920x678.jpg" style="width:100%">
-    <div class="text">
-      <h1>Build your Next Holiday Trip with Us</h1>
-      <h2>Create Your Tour</h2>
-      <div class="text__btn"><a href="#">Get in touch</a></div>
+    <div class="container">
+      <div class="text">
+        <h1>Build your Next Holiday Trip with Us</h1>
+        <h2>Create Your Tour</h2>
+        <div class="text__btn"><a href="#">Get in touch</a></div>
+      </div>
     </div>
   </div>
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </section>
-<!--The dots/circles 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>  -->
 <!--Categories------------------------------------------------------------------------------->
 <section class="categories">
   <div class="container">
@@ -194,26 +193,32 @@
       <h3 class="services__wrapper-header">Our Services</h3>
       <div class="services__wrapper-items">
         <div class="services__wrapper-item">
+          <div class="services__wrapper-img"><img src="icons/page_icons/free-icon-settings-263132.png" alt="sss"></div>
           <div class="services__wrapper-subheader"><a href="#">Personalized Matching</a></div>
           <div class="services__wrapper-descr">Our unique matching system lets you find just the tour you want for your next holiday.</div>
         </div>
         <div class="services__wrapper-item">
+          <div class="services__wrapper-img"><img src="icons/page_icons/free-icon-medal-6519108.png" alt="sss"></div>
           <div class="services__wrapper-subheader"><a href="#">Wide Variety of Tours</a></div>
           <div class="services__wrapper-descr">We offer a wide variety of personally picked tours with destinations all over the globe.</div>
         </div>
         <div class="services__wrapper-item">
+          <div class="services__wrapper-img"><img src="icons/page_icons/free-icon-star-126482.png" alt="sss"></div>
           <div class="services__wrapper-subheader"><a href="#">Highly Qualified Service</a></div>
           <div class="services__wrapper-descr">Our tour managers are qualified, skilled, and friendly to bring you the best service.</div>
         </div>
         <div class="services__wrapper-item">
+          <div class="services__wrapper-img"><img src="icons/page_icons/free-icon-customer-support-3758028.png" alt="sss"></div>
           <div class="services__wrapper-subheader"><a href="#">24/7 Support</a></div>
           <div class="services__wrapper-descr">You can always get professional support from our staff 24/7 and ask any question you have.</div>
         </div>
         <div class="services__wrapper-item">
+          <div class="services__wrapper-img"><img src="icons/page_icons/free-icon-fire-1633308.png" alt="sss"></div>
           <div class="services__wrapper-subheader"><a href="#">Handpicked Hotels</a></div>
           <div class="services__wrapper-descr">Our team offers only the best selection of affordable and luxury hotels to our clients.</div>
         </div>
         <div class="services__wrapper-item">
+          <div class="services__wrapper-img"><img src="icons/page_icons/free-icon-wallet-482541.png" alt="sss"></div>
           <div class="services__wrapper-subheader"><a href="#">Best Price Guarantee</a></div>
           <div class="services__wrapper-descr">If you find tours that are cheaper than ours, we will compensate the difference.</div>
         </div>
@@ -327,7 +332,6 @@
   </div>
   <button class="next-btn">&gt;</button>
 </section>
-
 <!--Footer----------------------------------------------------------------------------------->
 <section class="footer">
   <div class="container">
@@ -335,9 +339,9 @@
       <div class="footer__wrapper-item">
         <h6 class="footer__wrapper-header">CONTACT US</h6>
         <ul>
-          <li><a href="#">+1 323-913-4688</a></li>
-          <li><a href="#">info@demolink.org</a></li>
-          <li><a href="#">4730 Crystal Springs Dr, Los <br> Angeles, CA 90027</a></li>
+          <li><img src="icons/page_icons/free-icon-mobile-16182004.png" alt="ddd"><a href="#">+1 323-913-4688</a></li>
+          <li><img src="icons/page_icons/free-icon-email-561127.png" alt="sss"><a href="#">info@demolink.org</a></li>
+          <li><img src="icons/page_icons/free-icon-location-pin-1201684.png" alt="ccc"><a href="#">4730 Crystal Springs Dr, Los <br> Angeles, CA 90027</a></li>
           <div class="footer__wrapper-btn">
             <a href="#">Get in touch</a>
           </div>
@@ -374,22 +378,17 @@
       </div>
       <div class="policy__wrapper-item">
         <ul class="policy__social">
-          <li><a href="#"><img src="icons/facebook.svg" alt="facebook"></a></li>
-          <li><a href="#"><img src="icons/X.svg" alt="X"></a></li>
-          <li><a href="#"><img src="icons/instagram.svg" alt="instagram"></a></li>
+          <li><a href="#"><img src="icons/facebook (1).png" alt="facebook"></a></li>
+          <li><a href="#"><img src="icons/twitter (1).png" alt="X"></a></li>
+          <li><a href="#"><img src="icons/video (1).png" alt="instagram"></a></li>
         </ul>
       </div>
       <div class="policy__wrapper-item">
-        <a href="#">Privacy Policy</a>
+        <a href="policy.html">Privacy Policy</a>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
 <!--Global Mailform Output------------------------------------------------------------------->
     <div class="snackbars" id="form-output-global"></div>
 <!--Javascript------------------------------------------------------------------------------->
