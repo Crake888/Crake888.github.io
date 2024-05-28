@@ -1,5 +1,4 @@
 //--992----------------------------------------------------------------
-
 @media (min-width: 992px) 
     .header
         &__navbar
@@ -28,6 +27,14 @@
         &__wrapper
             &-img
                 padding-right: 20px
+                img
+                    height: 400px
+                    width: 500px
+    .tab > label
+        padding-top: 20px
+        padding-bottom: 0
+    h3
+        font-size: 35px
 
     .services
         &__wrapper
@@ -39,7 +46,50 @@
     .menu
         &_item
             display: none
+
+    .tours
+        &__wrapper
+            &-prise
+                top: -45px
+
+    //--about----------------------------------------------------------
+
+    h3.mod
+        font-size: 50px
+    .counter
+        &__header
+            font-size: 90px
+        &__subheader
+            font-size: 20px
+
+    //--Contact--------------------------------------------------------
+
+    .contact
+        &__wrapper
+            &-item
+                width: 240px
+                padding: 70px 30px
+            &-img
+                margin-bottom: 20px
+                img
+                    width: 30%
+            &-subheader
+                a
+                    font-size: 18px
+            &-descr
+                a
+                    font-size: 18px
     
+    .contact-form
+        &__wrapper
+            padding-bottom: 80px
+        &__title
+            font-size: 30px
+            border: 0
+            padding-right: 0
+        &__subtitle
+            font-size: 16px
+
 //--991----------------------------------------------------------------
     
 @media (max-width: 991px)
@@ -88,7 +138,7 @@
         flex-direction: column
         justify-content: center
         align-items: center
-        top: 80px
+        top: 79px
         left: -100%
         width: 260px
         height: 100vh
@@ -145,9 +195,15 @@
             flex-direction: column
             &-img
                 padding: 0
+            .tab
+                justify-content: center
+            .tab-content-btn
+                justify-content: center
             &-tabs
                 width: 75%
                 padding-top: 25px
+                h3
+                    text-align: center
                 
     .services
         &__wrapper
@@ -161,7 +217,46 @@
             &-content
                 padding: 0 15px
                 width: 60%
+
+    //--about----------------------------------------------------------
     
+
+
+    //--Contact--------------------------------------------------------
+
+    .contact
+        &__wrapper
+            &-item
+                width: 160px
+                padding: 50px 30px
+            &-img
+                margin-bottom: 20px
+                img
+                    width: 30%
+            &-subheader
+                a
+                    font-size: 15px
+            &-descr
+                a
+                    font-size: 15px
+
+    .contact-form
+        &__wrapper
+            padding-bottom: 80px
+        &__header
+            flex-direction: column
+            align-items: flex-start
+        &__title
+            font-size: 30px
+            border: 0
+            padding-right: 0
+        &__subtitle
+            font-size: 15px
+        &__btn
+            margin: 30px 0 30px 0
+            width: 230px
+            font-size: 15px
+
 //--767----------------------------------------------------------------    
 
 @media (max-width: 767px)
@@ -207,7 +302,8 @@
                 text-align: center
             &-descr
                 text-align: center 
-
+            &-img
+                text-align: center
 
     .tours
         &__wrapper
@@ -247,6 +343,85 @@
             &-btn 
                 display: none
 
+    //--about----------------------------------------------------------
+    
+    .promo
+        &__header
+            font-size: 40px
+            padding-top: 170px
+
+    .response
+        padding-bottom: 30px
+        &__wrapper
+            padding-bottom: 40px
+        &__header
+            font-size: 30px
+        &__title
+            font-size: 16px
+        &__descr
+            font-size: 13px
+        &__text
+            padding-left: 30px
+    
+    .counter
+        &__wrapper 
+            padding: 50px 0
+        &__header
+            font-size: 70px
+        &__subheader
+            font-size: 15px
+
+    .horizons
+        &__wrapper
+            &-img
+                padding-right: 20px
+                img
+                    height: 400px
+                    width: 375px
+    
+    .contact
+        padding: 70px 0
+        &__wrapper
+            &-items
+                flex-direction: column
+                align-items: center
+            &-item
+                width: 250px
+                padding: 50px 30px
+                margin-bottom: 20px
+            &-img
+                margin-bottom: 20px
+                img
+                    width: 25%
+            &-subheader
+                a
+                    font-size: 15px
+            &-descr
+                a
+                    font-size: 15px
+
+    .contact-form
+        &__wrapper
+            padding-bottom: 80px
+        &__header
+            flex-direction: column
+            align-items: flex-start
+        &__title
+            font-size: 30px
+            border: 0
+            padding-right: 0
+        &__subtitle
+            font-size: 15px
+        &__btn
+            margin: 20px 0 20px 0
+            width: 230px
+            font-size: 15px
+        &__row
+            flex-direction: column
+        &__group
+            width: 100%
+            margin-bottom: 20px
+
 //--575----------------------------------------------------------------                
 
 @media (max-width: 575px)
@@ -268,6 +443,8 @@
             font-size: 30px
 
     .text
+        padding-left: 10px
+        text-align: left
         &__btn 
             a
                 font-size: 12px
@@ -294,6 +471,8 @@
 
     .tab
         &-content
+            &-text
+                font-size: 14px
             &-btn
                 display: block
                 div
@@ -350,3 +529,86 @@
         &__social
             img
                 padding: 10px
+
+    //--about----------------------------------------------------------
+
+    .counter
+        &__wrapper 
+            flex-direction: column
+            align-items: center
+        &__header
+            font-size: 80px
+            border-top: 1px solid
+            padding-top: 20px
+        &__subheader
+            font-size: 15px
+            padding-bottom: 30px
+
+    .response
+        padding-bottom: 30px
+        &__wrapper
+            padding-bottom: 40px
+            align-items: flex-start
+            flex-direction: column
+        &__header
+            font-size: 25px
+            padding: 30px 0 40px 0
+        &__title
+            font-size: 16px
+        &__descr
+            font-size: 13px
+        &__text
+            padding-left: 30px
+        &__img
+            padding: 0 0 20px 30px
+
+    h3.mod
+        font-size: 30px
+        font-weight: 400
+        letter-spacing: 0.25em
+
+    .horizons
+        &__wrapper
+            &-img
+                padding-right: 0
+
+    .promo
+        height: 45vh
+        &__header
+            font-size: 30px
+            padding-top: 140px
+            font-weight: 400
+            letter-spacing: 0.25em
+        &__links
+            a
+                font-size: 12px
+
+    //--contact----------------------------------------------------------
+
+    .contact
+        padding: 50px 0
+        &__wrapper
+            &-item
+                width: 230px
+
+    .contact-form
+        &__wrapper
+            padding-bottom: 50px
+        &__header
+            flex-direction: column
+            align-items: flex-start
+        &__title
+            font-size: 28px
+            border: 0
+            padding-right: 0
+        &__subtitle
+            font-size: 15px
+        &__btn
+            margin: 20px 0 20px 0
+            width: 180px
+            font-size: 15px
+        &__row
+            flex-direction: column
+        &__group
+            width: 100%
+            margin-bottom: 20px

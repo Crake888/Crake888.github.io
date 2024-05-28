@@ -1,21 +1,23 @@
-.services
+.contact
     width: auto
     height: auto
-    padding: 50px 0
+    padding: 100px 0
     &__wrapper
         &-items
             display: flex
             justify-content: space-between
-            flex-wrap: wrap
+            flex-wrap: nowrap
         &-item
-            width: 375px
-            margin: 20px 0
-            padding: 54px
-            border: 8px solid #f4f4f4
+            width: 280px
+            padding: 90px 50px
+            border: 1px solid #f4f4f4
             transition: all .5s ease
+            text-align: center
             &:hover 
-                box-shadow: 0 0 0 10px #f4f4f4
+                box-shadow: 0 0 0 3px #f4f4f4
                 transform: scale(1.0)
+        &-img
+            margin-bottom: 30px
         &-header
             display: block
             text-align: center
@@ -34,5 +36,14 @@
         &-descr
             color: #9b9b9b
             font-size: 14px
-        &-img
-            padding-bottom: 10px
+            a
+                text-decoration: none
+                font-weight: 500
+                font-size: 20px
+                line-height: 1.2
+                color: #151515
+                transition: all .5s ease
+                &:hover
+                    color:#01b3a7
+
+
